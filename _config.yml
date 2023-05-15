@@ -1,7 +1,6 @@
-title: notokrs.dev
+title: notokrs portofolio
 email: rusnoto030@gmail.com
-description: >-
-  belum ada.
+description: Rusnoto Portofolio Website
 baseurl: ""
 url: "https://notokrs.github.io"
 github_username: notokrs
@@ -19,6 +18,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-seo-tag
 
 # Jekyll Archives
 jekyll-archives:

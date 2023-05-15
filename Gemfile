@@ -24,3 +24,5 @@ gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "github-pages", "~> 228"
 
 gem "webrick", "~> 1.8"
+
+gem "jekyll-seo-tag"
