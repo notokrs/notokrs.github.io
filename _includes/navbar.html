@@ -1,0 +1,23 @@
+<nav 
+  {% if page.title contains "Home" %}
+    class="bg-transparent"
+  {% else %}
+    class="bg-color border-bottom"
+  {% endif %}
+>
+  <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
+  <ul class="nav-menu">
+    <li class="nav-item"><a href="/blog">Blog</a></li>
+    <li class="nav-item"><a href="/project">Project</a></li>
+    <li class="nav-item"><a href="/about">About</a></li>
+    <li>
+      <a
+        href="javascript:void(0)"
+        class="theme-toggle"
+        id="theme-toggle"
+        onclick="themeToggle()"
+      >
+      </a>
+    </li>
+  </ul>
+</nav>

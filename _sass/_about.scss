@@ -1,0 +1,17 @@
+.about {
+  position: relative;
+  margin: 15vh 20vw 0;
+  min-height: 100vh;
+}
+.about-desc {
+  margin-top: 28px;
+  display: flex;
+  gap: 18px;
+  & > div > h2 {
+    font-size: 32px;
+  }
+  & > img {
+    width: 200px;
+    border-radius: 12px;
+  }
+}

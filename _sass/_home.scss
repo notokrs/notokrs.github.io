@@ -1,0 +1,72 @@
+.home {
+  position: relative;
+  height: 100vh;
+}
+.greeter {
+  z-index: 5;
+  position: absolute;
+  top: 40%;
+  margin-left: 20vw;
+  & > h1 {
+    font-family: "Space Grotesk";
+    color: var(--text-color);
+    font-size: 52px;
+    margin-bottom: -6px;
+  }
+  & > h1 > span {
+    color: var(--main-blue);
+  }
+}
+.greeter-icon {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  & i {
+    transition: color 0.5s ease;
+    font-size: 30px;
+  }
+  & i:hover {
+    color: var(--main-blue);
+  }
+}
+.gradient {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+}
+#texture {
+  position: absolute;
+  z-index: 1;
+  top: -25%;
+  left: -70%;
+  width: 480px;
+  height: 480px;
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  background: url(/assets/img/static/texture.png);
+}
+#elipse1 {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  filter: blur(30px);
+  background: linear-gradient(
+    0deg,
+    rgba(var(--purple-gradient), 0.27) 30%,
+    rgba(var(--blue-gradient)) 100%
+  );
+}
+#elipse2 {
+  position: absolute;
+  top: 10%;
+  left: -50%;
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  filter: blur(30px);
+  background: linear-gradient(
+    0deg,
+    rgba(var(--purple-gradient), 0.29) 20%,
+    rgba(var(--blue-gradient), 0.37) 80%
+  );
+}
