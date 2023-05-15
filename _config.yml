@@ -16,6 +16,7 @@ kramdown:
     block:
       line_numbers: true
 plugins:
+  - rouge
   - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
