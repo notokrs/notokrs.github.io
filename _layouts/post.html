@@ -9,7 +9,8 @@ layout: default
     <h4 class="mt-1">{{ page.description }}</h4>
   </header>
 
-  {% toc %}
+  {% include toc.html html=content class="toc__list" item_class="toc__sublist"
+  %}
   <article>{{ content }}</article>
 
   <div class="tags mt-3">

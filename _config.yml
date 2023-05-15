@@ -3,7 +3,7 @@ email: rusnoto030@gmail.com
 description: >-
   belum ada.
 baseurl: ""
-url: ""
+url: "https://notokrs.github.io"
 github_username: notokrs
 
 # Build settings
@@ -17,22 +17,12 @@ kramdown:
     block:
       line_numbers: true
 plugins:
-  - jekyll-toc
   - jekyll-feed
   - jekyll-archives
 
-# TOC Settings
-toc:
- ordered_list: false
- min_level: 1
- max_level: 6
- list_class: toc
- list_class: toc__list
- sublist_class: toc__sublist
-
 # Jekyll Archives
 jekyll-archives:
- enabled: ["tags"]
- layout: archive
- permalinks:
-    tag: '/tag/:name/'
+  enabled: ["tags"]
+  layout: archive
+  permalinks:
+    tag: "/tag/:name/"

@@ -114,27 +114,20 @@
     font-weight: 500;
     font-size: 20px;
   }
+  & a {
+    font-size: 14px;
+    line-height: 1.8rem;
+    font-family: "Inter";
+    color: var(--main-blue);
+    transition: all 0.5s ease;
+    &:hover {
+      filter: var(--hover-text-filter);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 4px;
+    }
+  }
 }
 .toc__sublist {
   margin-left: 1.25rem;
-}
-#toc a {
-  font-size: 14px;
-  line-height: 1.8rem;
-  font-family: "Inter";
-  color: var(--main-blue);
-  transition: all 0.5s ease;
-  &:hover {
-    filter: var(--hover-text-filter);
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 4px;
-  }
-}
-.toc-entry {
-  &::marker {
-    margin-left: 12px;
-    font-family: "Inter";
-    color: var(--main-blue);
-  }
 }
