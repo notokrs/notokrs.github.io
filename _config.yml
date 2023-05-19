@@ -9,6 +9,7 @@ github_username: notokrs
 include: ["_pages"]
 sass:
   sass_dir: _sass
+  style: compressed
 kramdown:
   syntax_highlighter: rouge
   input: GFM
