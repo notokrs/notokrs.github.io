@@ -1,6 +1,6 @@
 .project {
   position: relative;
-  margin: 15vh 20vw;
+  padding: 15vh 20vw;
   min-height: 100vh;
 }
 .project-list {
@@ -46,5 +46,22 @@
   & h6 {
     font-size: 22px;
     font-family: "Space Grotesk";
+  }
+}
+
+// Responsive
+@media only screen and (max-width: 700px) {
+  .project {
+    padding: 10vh 8vw 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project-list {
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+  .project-item {
+    width: 100%;
   }
 }

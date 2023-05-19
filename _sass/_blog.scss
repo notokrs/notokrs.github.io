@@ -1,6 +1,6 @@
 .blog {
   position: relative;
-  margin: 15vh 20vw 0;
+  padding: 15vh 20vw 0;
   min-height: 100vh;
 }
 .heading {
@@ -26,11 +26,15 @@
     color: var(--main-blue);
   }
 }
+.post-mobile {
+  display: none;
+}
 .layout-2 {
   display: flex;
   justify-content: space-between;
 }
 .post-list {
+  display: block;
   margin: 28px 22px 0 0;
   width: 65%;
 }
@@ -100,5 +104,31 @@
   }
   & a {
     margin-left: 0;
+  }
+}
+
+// Responsive
+@media only screen and (max-width: 700px) {
+  .blog {
+    padding: 12vh 8vw 0;
+  }
+  .post-desktop {
+    display: none;
+  }
+  .heading > p {
+    font-size: 16px;
+  }
+  .page-title-sec > h1 {
+    font-size: 34px;
+  }
+  .post-mobile {
+    display: block;
+    & .post-list {
+      width: 100%;
+      margin: 12px 0 0 0;
+    }
+    & .post-item > h3 {
+      font-size: 26px;
+    }
   }
 }

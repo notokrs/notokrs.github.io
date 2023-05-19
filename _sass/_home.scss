@@ -35,6 +35,7 @@
   left: 65%;
 }
 #texture {
+  overflow: hidden;
   position: absolute;
   z-index: 1;
   top: -25%;
@@ -46,6 +47,7 @@
   background: url(/assets/img/static/texture.webp);
 }
 #elipse1 {
+  overflow: hidden;
   height: 220px;
   width: 220px;
   border-radius: 50%;
@@ -55,9 +57,11 @@
     rgba(var(--purple-gradient), 0.27) 30%,
     rgba(var(--blue-gradient)) 100%
   );
+  animation: animate 3s ease-in-out infinite alternate;
 }
 #elipse2 {
   position: absolute;
+  overflow: hidden;
   top: 10%;
   left: -50%;
   height: 340px;
@@ -69,4 +73,42 @@
     rgba(var(--purple-gradient), 0.29) 20%,
     rgba(var(--blue-gradient), 0.37) 80%
   );
+  animation: animate 5s ease-in-out infinite alternate;
+}
+
+//animation
+@keyframes animate {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .greeter {
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    margin-left: 16vw;
+    & > h1 {
+      font-size: 42px;
+    }
+  }
+  .gradient {
+    top: 25%;
+    left: 40%;
+  }
+  #texture {
+    top: -25%;
+    left: -40%;
+    width: 280px;
+    height: 280px;
+  }
+  #elipse1 {
+    height: 180px;
+    width: 180px;
+  }
+  #elipse2 {
+    height: 200px;
+    width: 200px;
+  }
 }

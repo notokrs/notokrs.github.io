@@ -1,4 +1,4 @@
-<footer class="border-top">
+<footer class="footer-desktop border-top">
   <div>
     <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
     <p>Thanks for reading!</p>
@@ -6,16 +6,11 @@
     <p class="copyright">&#169; 2023-present Rusnoto. All Rights Reserved</p>
   </div>
   <div class="right">
-    <a
-      href="javascript:void(0)"
-      class="top-btn"
-      title="Back to top"
-      onclick="goTop()"
-    >
+    <a class="top-btn pointer" title="Back to top" onclick="goTop()">
       <i class="fa-solid fa-chevron-up"></i>
     </a>
     <div class="powered">
-      <p>Powered by</p>
+      <p>Made with ❤️ using</p>
       <a href="https://jekyllrb.com" target="_blank">
         <img
           class="img-small"
@@ -24,6 +19,28 @@
         />
       </a>
     </div>
+  </div>
+</footer>
+<footer class="footer-mobile">
+  <div>
+    <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
+    <p>Thanks for reading!</p>
+    <div class="powered">
+      <p>Made with ❤️ using</p>
+      <a href="https://jekyllrb.com" target="_blank">
+        <img
+          class="img-small"
+          src="/assets/img/static/jekyll.webp"
+          alt="jekyll logo"
+        />
+      </a>
+    </div>
+    <p class="copyright">&#169; 2023-present Rusnoto. All Rights Reserved</p>
+  </div>
+  <div class="right">
+    <a class="top-btn pointer" title="Back to top" onclick="goTop()">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
   </div>
 </footer>
 {% include script.html %}

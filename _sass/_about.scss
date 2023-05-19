@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  margin: 15vh 20vw 0;
+  padding: 15vh 20vw 0;
   min-height: 100vh;
 }
 .about-desc {
@@ -11,7 +11,43 @@
     font-size: 32px;
   }
   & > img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 12px;
+  }
+  & p {
+    text-align: justify;
+  }
+  & .greeter-icon {
+    gap: 18px;
+    & i {
+      font-size: 26px !important;
+    }
+  }
+}
+
+//Responsive
+@media only screen and (max-width: 600px) {
+  .about {
+    padding: 12vh 8vw 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-desc {
+    flex-direction: column;
+    & > div > h2 {
+      text-align: center;
+    }
+    & img {
+      margin: auto;
+      max-width: 160px;
+      max-height: 160px;
+    }
+    & .greeter-icon {
+      width: fit-content;
+      justify-items: center;
+      margin: 12px auto;
+    }
   }
 }

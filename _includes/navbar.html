@@ -1,23 +1,54 @@
-<nav 
+<header 
   {% if page.title contains "Home" %}
-    class="bg-transparent"
+    class="header-desktop bg-blur"
   {% else %}
-    class="bg-color border-bottom"
+    class="header-desktop bg-blur border-bottom"
   {% endif %}
 >
   <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
-  <ul class="nav-menu">
-    <li class="nav-item"><a href="/blog">Blog</a></li>
-    <li class="nav-item"><a href="/project">Project</a></li>
-    <li class="nav-item"><a href="/about">About</a></li>
-    <li>
+  <nav class="nav-desktop">
+    <ul>
+      <li class="nav-item"><a href="/blog">Blog</a></li>
+      <li class="nav-item"><a href="/project">Project</a></li>
+      <li class="nav-item"><a href="/about">About</a></li>
+      <li>
+        <a
+          class="theme-toggle pointer"
+          onclick="themeToggle()"
+        >
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<header class="header-mobile bg-blur">
+  <div>
+    <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
+    <button class="burger" onclick="menuToggle()">
+      <i id="burger-icon" class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<nav class="nav-mobile" id="nav-mobile">
+  <div>
+    <div>
+      <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
       <a
-        href="javascript:void(0)"
-        class="theme-toggle"
-        id="theme-toggle"
+        class="theme-toggle pointer"
         onclick="themeToggle()"
       >
       </a>
-    </li>
+    </div>
+    <button class="burger" onclick="menuToggle()">
+      <i id="close-icon" class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <ul>
+    <li class="nav-item-mobile"><a href="/blog">Blog</a></li>
+    <li class="nav-item-mobile"><a href="/project">Project</a></li>
+    <li class="nav-item-mobile"><a href="/about">About</a></li>
   </ul>
 </nav>
+<div id="nav-mobile-backdrop" class="bg-blur" onclick="menuToggle()"></div>
