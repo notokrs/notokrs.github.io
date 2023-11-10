@@ -1,19 +1,27 @@
 //Light
 $light-word: #303030;
 $light-bg: #f2f2f2;
+$light-comment: #a6a6a6;
+$light-hg-op: #505050;
 
 //Dark
 $dark-word: #d0d0d0;
 $dark-bg: #151515;
+$dark-comment: #505050;
+$dark-hg-op: #a6a6a6;
 
 html,
 html[data-theme="light"] {
   --main-syntax-word: #{$light-word};
   --main-syntax-bg: #{$light-bg};
+  --comment: #{$light-comment};
+  --hg-op: #{$light-hg-op};
 }
 html[data-theme="dark"] {
   --main-syntax-word: #{$dark-word};
   --main-syntax-bg: #{$dark-bg};
+  --comment: #{$dark-comment};
+  --hg-op: #{$dark-hg-op};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,10 +29,14 @@ html[data-theme="dark"] {
   html[data-theme="light"] {
     --main-syntax-word: #{$light-word};
     --main-syntax-bg: #{$light-bg};
+    --comment: #{$light-comment};
+    --hg-op: #{$light-hg-op};
   }
   html[data-theme="dark"] {
     --main-syntax-word: #{$dark-word};
     --main-syntax-bg: #{$dark-bg};
+    --comment: #{$dark-comment};
+    --hg-op: #{$dark-hg-op};
   }
 }
 
@@ -72,7 +84,7 @@ div[class="highlight"] {
 .highlight .cpf,
 .highlight .c1,
 .highlight .cs {
-  color: #505050;
+  color: var(--comment);
 }
 .highlight .cp {
   color: #f4bf75;
@@ -82,11 +94,11 @@ div[class="highlight"] {
 }
 .highlight .o,
 .highlight .ow {
-  color: #a6a6a6;
+  color: var(--hg-op);
 }
 .highlight .p,
 .highlight .pi {
-  color: #a6a6a6;
+  color: var(--hg-op);
 }
 .highlight .gi {
   color: #90a959;
