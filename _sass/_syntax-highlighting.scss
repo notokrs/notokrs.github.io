@@ -40,6 +40,10 @@ html[data-theme="dark"] {
   }
 }
 
+ pre {
+  font-family: "JetBrains Mono";
+ }
+
 .language-plaintext {
   background: var(--main-syntax-bg);
   color: var(--main-syntax-word);
@@ -53,7 +57,6 @@ div[class="highlight"] {
   opacity: 0.6;
 }
 .highlight {
-  font-family: "JetBrains Mono";
   font-size: 16px;
   padding: 8px 12px;
   overflow: auto;
