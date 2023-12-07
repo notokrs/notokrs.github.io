@@ -40,24 +40,29 @@ html[data-theme="dark"] {
   }
 }
 
- pre {
+pre {
   font-family: "JetBrains Mono";
- }
+}
 
 .language-plaintext {
+  font-family: "JetBrains Mono";
   background: var(--main-syntax-bg);
   color: var(--main-syntax-word);
   padding: 4px;
   border-radius: 8px;
+  & .rouge-code pre {
+    white-space: normal;
+    word-wrap: break-word;
+  }
 }
-div[class="highlight"] {
+.highlighter-rouge {
   margin-top: 16px;
 }
 .lineno {
   opacity: 0.6;
 }
 .highlight {
-  font-size: 16px;
+  font-size: 14px;
   padding: 8px 12px;
   overflow: auto;
   border-radius: 12px;
@@ -179,9 +184,9 @@ div[class="highlight"] {
   color: #90a959;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 540px) {
   .highlight {
-    font-size: 14px;
+    font-size: 12px;
     padding: 6px 8px;
   }
 }

@@ -24,16 +24,16 @@ $dark-blue-gradient: 13, 93, 165;
 $dark-border-color: 75, 85, 99;
 
 // Alerts
-$light-text-info: #54a0ff;
-$light-text-warning: #f39c12;
+$light-text-info: #1f82ff;
+$light-text-warning: #d6870b;
 $light-text-danger: #e74c3c;
 
 $dark-text-info: #0a3c7b;
 $dark-text-warning: #c07c11;
 $dark-text-danger: #ca3a2b;
 
-$light-bg-info: #b8d7ff;
-$light-bg-warning: #fad294;
+$light-bg-info: #c2f9ff;
+$light-bg-warning: #fbdcac;
 $light-bg-danger: #f4aca4;
 
 $dark-bg-info: #54a0ff;
@@ -135,7 +135,9 @@ h6 {
   font-family: "Space Grotesk";
 }
 body {
-  transition: background-color 0.5s ease, color 1s ease;
+  transition:
+    background-color 0.5s ease,
+    color 1s ease;
   background: var(--main-bg);
 }
 
@@ -265,12 +267,19 @@ body {
 
 // Utils
 .title {
+  display: inline-block;
   font-family: "Space Grotesk";
+  line-height: 1.2 !important;
   font-weight: 600;
   color: var(--text-color);
 }
 .t-46 {
   font-size: 46px;
+}
+// margin & padding
+.m-1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .mt-1 {
   margin-top: 12px;
@@ -281,17 +290,64 @@ body {
 .mt-3 {
   margin-top: 32px !important;
 }
+//border
 .border-top {
   border-top: solid 1px rgb(var(--border-color));
 }
 .border-bottom {
   border-bottom: solid 1px rgb(var(--border-color));
 }
+//pointer
+.pointer {
+  cursor: pointer;
+}
+//img
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .img-small {
   width: 120px;
 }
-.pointer {
-  cursor: pointer;
+.img-long {
+  width: calc(100% - 80vh);
+}
+//align
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+//flex
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-gap {
+  gap: 12px;
+}
+//width
+.w-30 {
+  max-width: 30%;
+}
+.w-60 {
+  max-width: 60%;
+}
+.w-80 {
+  max-width: 60%;
+}
+.w-100 {
+  max-width: 100%;
+}
+//display
+.d-block {
+  display: block;
 }
 
 // Alert
@@ -367,6 +423,60 @@ body {
 }
 
 // Responsive
+@media only screen and (max-width: 540px) {
+  .img-long {
+    width: calc(100% - 20vh);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-mobile {
+    & li {
+      font-size: 18px;
+    }
+  }
+  .footer-desktop {
+    display: none;
+  }
+  .footer-mobile {
+    border-top: solid 1px rgb(var(--border-color));
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--sec-bg);
+    padding: 18px $side-margin-mobile 12px;
+    & div > a {
+      font-size: 24px !important;
+    }
+    & .right {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+    & .top-btn {
+      padding: 4px 8px;
+      border: solid 1px rgb(var(--border-color));
+      display: block;
+      border-radius: 12px;
+      &:hover {
+        transition: all 0.5s ease;
+        translate: 0 -8px;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 0;
+  }
+  .powered {
+    margin-top: 0;
+  }
+  .alert {
+    & > div > p {
+      font-size: 16px !important;
+    }
+    & > p {
+      font-size: 12px !important;
+    }
+  }
+}
 @media only screen and (max-width: 700px) {
   .header-mobile {
     display: block;
@@ -440,53 +550,8 @@ body {
     font-size: 30px;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .nav-mobile {
-    & li {
-      font-size: 18px;
-    }
-  }
-  .footer-desktop {
-    display: none;
-  }
-  .footer-mobile {
-    border-top: solid 1px rgb(var(--border-color));
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--sec-bg);
-    padding: 18px $side-margin-mobile 12px;
-    & div > a {
-      font-size: 24px !important;
-    }
-    & .right {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
-    & .top-btn {
-      padding: 4px 8px;
-      border: solid 1px rgb(var(--border-color));
-      display: block;
-      border-radius: 12px;
-      &:hover {
-        transition: all 0.5s ease;
-        translate: 0 -8px;
-      }
-    }
-  }
-  .copyright {
-    margin-top: 0;
-  }
-  .powered {
-    margin-top: 0;
-  }
-  .alert {
-    & > div > p {
-      font-size: 16px !important;
-    }
-    & > p {
-      font-size: 12px !important;
-    }
+@media only screen and (max-width: 820px) {
+  .img-long {
+    width: calc(100% - 30vh);
   }
 }

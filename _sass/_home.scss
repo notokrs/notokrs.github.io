@@ -6,7 +6,7 @@
   z-index: 5;
   position: absolute;
   top: 40%;
-  margin-left: 20vw;
+  left: 20%;
   & > h1 {
     font-family: "Space Grotesk";
     color: var(--text-color);
@@ -88,7 +88,7 @@
     z-index: 5;
     position: absolute;
     top: 30%;
-    margin-left: 16vw;
+    left: 20%;
     & > h1 {
       font-size: 42px;
     }
@@ -96,6 +96,35 @@
   .gradient {
     top: 25%;
     left: 40%;
+  }
+  #texture {
+    top: -25%;
+    left: -40%;
+    width: 280px;
+    height: 280px;
+  }
+  #elipse1 {
+    height: 180px;
+    width: 180px;
+  }
+  #elipse2 {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .greeter {
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    & > h1 {
+      font-size: 42px;
+    }
+  }
+  .gradient {
+    top: 25%;
   }
   #texture {
     top: -25%;

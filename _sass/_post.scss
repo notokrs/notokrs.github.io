@@ -102,7 +102,7 @@
   border: solid 1px rgb(var(--border-color));
   background-color: var(--sec-bg);
   border-radius: 12px;
-  line-height: 1.8rem;
+  line-height: 1.8;
   width: 60%;
   padding: 1rem 2rem;
   font-weight: 400;
@@ -115,7 +115,7 @@
   }
   & a {
     font-size: 14px;
-    line-height: 1.8rem;
+    line-height: 1.8;
     font-family: "Inter";
     color: var(--main-blue);
     transition: all 0.5s ease;
@@ -132,11 +132,6 @@
 }
 
 //Responsive
-@media only screen and (max-width: 700px) {
-  .post {
-    padding: 12vh 8vh;
-  }
-}
 @media only screen and (max-width: 500px) {
   .post {
     padding: 12vh 8vw 0;
@@ -148,12 +143,12 @@
       & ul,
       & ol,
       & li {
-        margin-left: 0.8rem;
+        margin-left: 0.5rem;
         font-size: 14px;
       }
       & li {
         padding-left: 6px;
-        line-height: 1.8rem;
+        line-height: 1.8;
       }
       & p {
         font-size: 14px;
@@ -213,7 +208,7 @@
     }
   }
   .toc__list {
-    line-height: 1.8rem;
+    line-height: 1.8;
     width: 100%;
     padding: 1rem 2rem;
     font-weight: 400;
@@ -222,7 +217,17 @@
     }
     & a {
       font-size: 14px;
-      line-height: 1.8rem;
+      line-height: 1.8;
     }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .post {
+    padding: 12vh 8vh;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .post {
+    padding: 12vh 8vh;
   }
 }
