@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (theme === "dark") {
     favicon.setAttribute(
       "href",
-      base_url + "/assets/img/static/favicon-dark.png"
+      base_url + "/assets/img/static/favicon-dark.png",
     );
     setIcon("light");
   } else {
     favicon.setAttribute(
       "href",
-      base_url + "/assets/img/static/favicon-light.png"
+      base_url + "/assets/img/static/favicon-light.png",
     );
     setIcon("dark");
   }
@@ -33,13 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (theme === null && systemInitiatedDark.matches) {
     favicon.setAttribute(
       "href",
-      base_url + "/assets/img/static/favicon-dark.png"
+      base_url + "/assets/img/static/favicon-dark.png",
     );
     setIcon("light");
   } else if (theme === null && systemInitiatedDark.matches === false) {
     favicon.setAttribute(
       "href",
-      base_url + "/assets/img/static/favicon-light.png"
+      base_url + "/assets/img/static/favicon-light.png",
     );
     setIcon("dark");
   }
@@ -93,11 +93,11 @@ function setIcon(type) {
   const themeIcons = document.getElementsByClassName("theme-toggle");
   if (type === "dark") {
     [...themeIcons].forEach(
-      (el) => (el.innerHTML = '<i class="fa-regular fa-moon"></i>')
+      (el) => (el.innerHTML = '<i class="fa-regular fa-moon"></i>'),
     );
   } else if (type === "light") {
     [...themeIcons].forEach(
-      (el) => (el.innerHTML = '<i class="fa-regular fa-sun"></i>')
+      (el) => (el.innerHTML = '<i class="fa-regular fa-sun"></i>'),
     );
   }
 }
