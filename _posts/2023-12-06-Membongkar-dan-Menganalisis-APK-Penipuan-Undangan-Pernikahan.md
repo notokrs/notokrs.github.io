@@ -141,7 +141,7 @@ Dan ternyata botnya masih aktif.
 
 ### ReceiveSms.java
 
-File Recive SMS ini berisi _service_ yang di-_extends_ dari Broadcaster Receiver. Fungsi `onReceived` akan dipanggil jika ada pesan atau _broadcast_ dari aplikasi atau sistem dikirimkan. Diaplikasi ini, fungsi `onReceived` akan dipanggil ketika ada pesan SMS masuk. Perhatikan dibaris 24.
+File Recive SMS ini berisi _service_ yang di-<i>extends</i> dari Broadcaster Receiver. Fungsi `onReceived` akan dipanggil jika ada pesan atau _broadcast_ dari aplikasi atau sistem dikirimkan. Diaplikasi ini, fungsi `onReceived` akan dipanggil ketika ada pesan SMS masuk. Perhatikan dibaris 24.
 
 <img src="https://i.ibb.co/vQ10gWb/app-scam-22.png" class="img-fluid center m-1">
 
@@ -232,7 +232,7 @@ https://api.telegram.org/bot6786269059:AAE5kJhf3LIHOVNWjjinjStyEzwzFQWysVk/sendM
 
 ### SendSMS.java
 
-File ini berisi sama dengan `ReceiveSms.java` yaitu _service_ yang di-_extend_ dari Broadcast Receiver. Meski sama - sama memiliki _trigger_ saat ada SMS masuk, tetapi file ini berfungsi untuk mengirim pesan SMS ke nomor tertentu seperti dibaris 55. Dan jika SMS tersebut berhasil terkirim, maka akan mengirimkan pesan ke bot API telegram di baris 65.
+File ini berisi sama dengan `ReceiveSms.java` yaitu _service_ yang di-<i>extend</i> dari Broadcast Receiver. Meski sama - sama memiliki _trigger_ saat ada SMS masuk, tetapi file ini berfungsi untuk mengirim pesan SMS ke nomor tertentu seperti dibaris 55. Dan jika SMS tersebut berhasil terkirim, maka akan mengirimkan pesan ke bot API telegram di baris 65.
 
 <img src="https://i.ibb.co/BtkL0v7/app-scam-26.png" class="img-fluid center m-1">
 
