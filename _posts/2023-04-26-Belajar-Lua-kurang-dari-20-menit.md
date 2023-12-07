@@ -3,6 +3,7 @@ layout: "post"
 title: "Belajar Lua kurang dari 20 menit"
 permalink: /blog/:title
 toc: true
+locale: id_ID
 categories: blog
 tags: programming lua
 description: "Lua merupakan bahasa pemprograman <i>scripting</i> (dijalankan tanpa <i>compile</i>) sama seperti Javascript, Python, Ruby, dsb. Alasan awal penulis mempelajari bahasa ini adalah untuk mengkonfigurasi neovim. Walaupun <i>syntax</i>-nya terlihat simpel, tapi sebenarnya bahasa ini sangat <i>powerful</i>, bahkan dapat digunakan dalam <i>game development</i>."

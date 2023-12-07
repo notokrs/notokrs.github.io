@@ -3,12 +3,14 @@ layout: "post"
 title: "Membongkar dan Menganalisis APK Penipuan Undangan Pernikahan"
 permalink: /blog/:title
 toc: true
+locale: id_ID
+images: https://i.ibb.co/2y3CZx0/app-iscam-1.png
 categories: blog
 tags: reverse-engineering programming android
 description: "Pernah mendapat kiriman APK dari Whatsapp dengan nama undangan pernikahan? cek paket? Jangan sembarangan menginstal APK kiriman dari orang lain. Selalu cek dan <i>recheck</i> kembali. Disini saya akan mencoba membongkar aplikasi penipuan berkedok undangan pernikahan."
 ---
 
-<img src="https://i.ibb.co/2y3CZx0/app-scam-1.png" class="img-fluid center m-1">
+<img src="https://i.ibb.co/2y3CZx0/app-iscam-1.png" class="img-fluid center m-1">
 
 # Reverse Engineering
 
