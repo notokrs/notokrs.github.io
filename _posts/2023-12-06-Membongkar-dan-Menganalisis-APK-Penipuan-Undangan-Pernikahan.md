@@ -68,9 +68,13 @@ Selanjutnya adalah file Main Activity. Main Activity adalah aktivitas pertama ya
 
 Pada baris 80 - 88 aplikasi akan menampilkan _webview_ yang mengarah ke _url_ kosong. Selanjutnya pada baris 94 - 99 aplikasi akan meminta izin kepada _user_ untuk menerima & mengirim SMS. Selanjutnya, aplikasi akan meminta izin membaca notifikasi perangkat.
 
-<div class="flex flex-gap justify-center align-items-center m-1 w-80 center">
-	<img src="https://i.ibb.co/R0NM9kx/app-scam-11.png" class="img-fluid">
-    <img src="https://i.ibb.co/KcgWtzN/app-scam-12.png" class="img-fluid">
+<div class="flex flex-gap justify-center align-items-center m-1 center">
+    <div class="img-long">
+        <img src="https://i.ibb.co/R0NM9kx/app-scam-11.png" class="img-fluid">
+    </div>
+    <div class="img-long">
+        <img src="https://i.ibb.co/KcgWtzN/app-scam-12.png" class="img-fluid">
+    </div>
 </div>
 
 Jika _user_ mengizinkan, maka aplikasi akan mengirimkan sebuah pesan melalui bot api telegram berisi informasi tipe perangkat dengan pesan :
