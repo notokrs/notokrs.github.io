@@ -14,3 +14,4 @@ gem "kramdown-parser-gfm", "~> 1.1.0"
 
 gem "webrick", "~> 1.8"
 
+gem "json", "~> 2.7"
