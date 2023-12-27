@@ -252,6 +252,6 @@ Oleh karena itu, beberapa hal yang dapat saya rekomendasikan untuk menghindari h
 Spam dikit boleh kali yaaaa 🤣 🤣 🤣.
 
 <div style="width:100%;height:0px;position:relative;padding-bottom:52.812%;margin-top:10px">
-    <iframe src="https://streamable.com/e/0bd0nq?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/IJmp0epM4XM?autoplay=1&controls=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;">
     </iframe>
 </div>
