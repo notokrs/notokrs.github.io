@@ -135,9 +135,7 @@ h6 {
   font-family: "Space Grotesk";
 }
 body {
-  transition:
-    background-color 0.5s ease,
-    color 1s ease;
+  transition: background-color 0.5s ease, color 1s ease;
   background: var(--main-bg);
 }
 
@@ -257,7 +255,7 @@ body {
   & > a:hover {
     & > img {
       transition: filter 0.5s ease;
-      filter: brightness(160%);
+      filter: var(--hover-text-filter);
     }
   }
 }
@@ -307,7 +305,7 @@ body {
   height: auto;
 }
 .img-small {
-  width: 120px;
+  width: 80px;
 }
 .img-long {
   max-width: calc(100% - 40vw);

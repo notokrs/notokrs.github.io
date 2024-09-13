@@ -3,6 +3,7 @@
   padding: 15vh 20vw 0;
   height: 100%;
   & time {
+    display: block;
     font-size: 14px;
     font-family: "Inter";
     font-weight: 400;
@@ -11,7 +12,7 @@
   }
   & article {
     margin-top: 28px;
-    & a:not(.anchorjs-link) {
+    & a:not(.anchorjs-link, .glightbox) {
       color: var(--main-blue);
       transition: filter 0.5s ease;
       &:hover {
@@ -86,6 +87,20 @@
       & tr {
         border: 1px solid rgb(var(--border-color));
         padding: 12px;
+      }
+    }
+    & .glightbox {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      & > img {
+        transition: transform 0.5s ease;
+        border-radius: 12px;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
