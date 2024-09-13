@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 
-# gem "jekyll", "~> 3.9.3"
-gem "github-pages", "~> 228", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem "rouge", "~> 3.26.0"
-  gem "jekyll-feed", "~> 0.12"
+  gem "rouge", "~> 3.30.0"
+  gem "jekyll-feed", "~> 0.17"
   gem "jekyll-archives", "~> 2.2.1"
   gem "jekyll-seo-tag"
 end
