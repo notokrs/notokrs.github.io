@@ -1,22 +1,24 @@
-<header 
+<header
   {% if page.title contains "Home" %}
-    class="header-desktop bg-blur"
+  class="header-desktop bg-blur"
   {% else %}
-    class="header-desktop bg-blur border-bottom"
-  {% endif %}
->
-  <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
+  class="header-desktop bg-blur border-bottom"
+  {% endif %}>
+  <a class="logo" href="{{ site.url }}">notokrs<span>.</span>
+  </a>
   <nav class="nav-desktop">
     <ul>
-      <li class="nav-item"><a href="/blog">Blog</a></li>
-      <li class="nav-item"><a href="/project">Project</a></li>
-      <li class="nav-item"><a href="/about">About</a></li>
+      <li class="nav-item">
+        <a href="/blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a href="/project">Project</a>
+      </li>
+      <li class="nav-item">
+        <a href="/about">About</a>
+      </li>
       <li>
-        <a
-          class="theme-toggle pointer"
-          onclick="themeToggle()"
-        >
-        </a>
+        <a class="theme-toggle pointer" onclick="themeToggle()"></a>
       </li>
     </ul>
   </nav>
@@ -24,7 +26,8 @@
 
 <header class="header-mobile bg-blur">
   <div>
-    <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
+    <a class="logo" href="{{ site.url }}">notokrs<span>.</span>
+    </a>
     <button class="burger" onclick="menuToggle()">
       <i id="burger-icon" class="fa-solid fa-bars"></i>
     </button>
@@ -34,21 +37,30 @@
 <nav class="nav-mobile" id="nav-mobile">
   <div>
     <div>
-      <a class="logo" href="{{ site.url }}">notokrs<span>.</span></a>
-      <a
-        class="theme-toggle pointer"
-        onclick="themeToggle()"
-      >
+      <a class="logo" href="{{ site.url }}">notokrs<span>.</span>
       </a>
+      <a class="theme-toggle pointer" onclick="themeToggle()"></a>
     </div>
-    <button class="burger" onclick="menuToggle()" aria-label="Menu button mobile">
+    <button
+      class="burger"
+      onclick="menuToggle()"
+      aria-label="Menu button mobile">
       <i id="close-icon" class="fa-solid fa-xmark"></i>
     </button>
   </div>
   <ul>
-    <li class="nav-item-mobile"><a href="/blog">Blog</a></li>
-    <li class="nav-item-mobile"><a href="/project">Project</a></li>
-    <li class="nav-item-mobile"><a href="/about">About</a></li>
+    <li class="nav-item-mobile">
+      <a href="/blog">Blog</a>
+    </li>
+    <li class="nav-item-mobile">
+      <a href="/project">Project</a>
+    </li>
+    <li class="nav-item-mobile">
+      <a href="/about">About</a>
+    </li>
   </ul>
 </nav>
-<div id="nav-mobile-backdrop" class="bg-blur" onclick="menuToggle()"></div>
+<div
+  id="nav-mobile-backdrop"
+  class="bg-blur"
+  onclick="menuToggle()"></div>
