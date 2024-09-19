@@ -61,7 +61,7 @@ pre {
 .lineno {
   opacity: 0.6;
 }
-.highlight {
+.highlight:not(pre) {
   font-size: 14px;
   padding: 8px 12px;
   overflow: auto;

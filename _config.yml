@@ -28,3 +28,10 @@ jekyll-archives:
   layout: archive
   permalinks:
     tag: "/tag/:name/"
+
+# Front Matter Default
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/static/pp.webp
